@@ -6,6 +6,10 @@ Source: Red de Programación Competitiva
 
 Source file name: Battle.cpp
 
+Input: Standard
+
+Output: Standard
+
 You are participating in the Battle-bots Aggressive Power Contest. It is a tournament where each team builds a robot that can battle with other robots, and you win by destroying your opponent’s robot. Specifically, you win when your opponent’s robot stops moving after its only motor is destroyed.
 
 You have outfitted your bot with two weapons: it has a sword that can slash the opponent’s bot in half, and it has a claw that can take a chunk out of your opponent’s bot and crush it into scrap. The attacks take equally long. The program that controls your bot is always running to decide which attack to use next. If your battle-bot uses the sword attack to cut its opponent in half, the half with the motor will keep moving, and you can ignore the other half. If your battle-bot uses the claw attack, it will take a chunk of size 1 out of the opponent’s bot, but unless you can take the bot out entirely you have to assume that the motor of the bot is in the piece you have not clawed, and keep fighting.
