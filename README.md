@@ -3,6 +3,7 @@ This repository will have all the problems I've solved in the programming contes
 
 # Problem B. Battle Bots
 Source: Red de Programación Competitiva
+
 Source file name: Battle.cpp
 
 You are participating in the Battle-bots Aggressive Power Contest. It is a tournament where each team builds a robot that can battle with other robots, and you win by destroying your opponent’s robot. Specifically, you win when your opponent’s robot stops moving after its only motor is destroyed.
