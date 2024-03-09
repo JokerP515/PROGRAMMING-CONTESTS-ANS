@@ -3,8 +3,11 @@ This repository will have all the problems I've solved in the programming contes
 
 # Problem D. Democratic Naming 
 Source: Red de Programación Competitiva
+
 Source file name: Democratic.cpp
+
 Input: Standard
+
 Output: Standard
 
 A new county has been created on artificially created land out from the coast, with code name “Built Anew Peninsula County”, but the final name still needs to be chosen. To establish a new name, the cities within the county get to vote on the individual letters of the name. 
