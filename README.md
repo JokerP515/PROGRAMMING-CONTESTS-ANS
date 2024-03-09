@@ -1,4 +1,4 @@
-# PROGRAMMING-CONTESTS-ANS
+## Descriptions of the problems I've solved will be present here
 
 # Problem B. Battle Bots
 Source: Red de Programación Competitiva
@@ -51,7 +51,7 @@ Input 2:
 
 3
 
-Output:
+Output 2:
 
 3
 
