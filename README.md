@@ -1,7 +1,8 @@
 # PROGRAMMING-CONTESTS-ANS
 This repository will have all the problems I've solved in the programming contests I've been present in
 
-# Problem D. Democratic Naming // Source: Red de Programación Competitiva
+# Problem D. Democratic Naming 
+Source: Red de Programación Competitiva
 Source file name: Democratic.cpp
 Input: Standard
 Output: Standard
