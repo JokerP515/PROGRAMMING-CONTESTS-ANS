@@ -62,7 +62,7 @@ Output 2:
 # Problem D. Democratic Naming 
 Source: Red de Programación Competitiva
 
-Source file name: Democratic.cpp
+Source file name: [Democratic.cpp](/Democratic.cpp)
 
 Input: Standard
 
