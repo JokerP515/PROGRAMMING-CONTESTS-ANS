@@ -3,7 +3,7 @@
 # Problem B. Battle Bots
 Source: Red de Programación Competitiva
 
-Source file name: Battle.cpp
+Source file name: [Battle.cpp](/Battle.cpp)
 
 Input: Standard
 
