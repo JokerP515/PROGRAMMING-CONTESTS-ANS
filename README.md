@@ -32,29 +32,29 @@ Output the least number of attacks needed to destroy your opponent’s bot.
 ## Example
 
 Input 0:
-
+```
 5
-
+```
 Output 0:
-
+```
 4
-
+```
 Input 1:
-
+```
 6
-
+```
 Output 1:
-
+```
 4
-
+```
 Input 2:
-
+```
 3
-
+```
 Output 2:
-
+```
 3
-
+```
 
 
 
@@ -85,28 +85,28 @@ Output the name of the new county.
 ## Example
 
 Input 0:
-
+```
 3 5                               
 apple
 maple
 alpha
-
+```
 Output 0:
-
+```
 aaple
-
+```
 Input 1:
-
+```
 3 4
 
 icpc
 back
 laps
-
+```
 Output 1:
-
+```
 bapc
-
+```
 # Problem L – LED Matrix
 
 Author : Alejandro Strejilevich de Loma, Argentina
@@ -117,12 +117,16 @@ Source file name: [L.cpp](/L.cpp)
 
 A LED matrix is a two-dimensional array of LEDs that is used to display information. This is achieved by turning on the LEDs that form a desired pattern. The figure below represents a LED matrix displaying a smiling-face pattern. LEDs that are turned off are shown in white, while LEDs that are turned on appear colored.
 
-![image](https://github.com/JokerP515/PROGRAMMING-CONTESTS-ANS/assets/106451105/14a49eba-03c8-401e-a7d8-b923ded8429b)
+<p align="center">
+  <img src="https://github.com/JokerP515/PROGRAMMING-CONTESTS-ANS/assets/106451105/14a49eba-03c8-401e-a7d8-b923ded8429b" alt = "LEDs that are turned on"/>
+</p>
 
 
 Some LED matrices scroll the pattern from right to left across the matrix, turning on just the appropriate LEDs at each step. Thus, any pattern with the same height than the matrix can be displayed, even patterns that are wider than the matrix. The pattern scrolling works as follows: Initially, all the LEDs in the matrix are turned off. The next step, the last column of the matrix displays the first column of the pattern. At each new step the pattern is moved one column to the left across the matrix, until the first column of the matrix displays the last column of the pattern. Finally, all the LEDs in the matrix are turned off again. If a LED matrix is equipped with pattern scrolling, the scrolling occurs even if the pattern if not wider than the matrix. The picture below shows all the step required to display a pattern of an arrow that is pointing to the left.
 
-![image](https://github.com/JokerP515/PROGRAMMING-CONTESTS-ANS/assets/106451105/6d23eb50-6992-457c-b522-c596f3d7522f)
+<p align="center">
+  <img src="https://github.com/JokerP515/PROGRAMMING-CONTESTS-ANS/assets/106451105/6d23eb50-6992-457c-b522-c596f3d7522f" alt="Arrow pattern"/>
+</p>
 
 Astrid has just received an old LED matrix with pattern scrolling, and she thinks that some LEDs might be broken. Since broken LEDs cannot be turned on, she is worried that some patterns will not display properly. Given the description of the state of each LED, and the pattern to display, you must tell whether the appropriate LEDs can be turned on at every step of the pattern scrolling.
 
@@ -138,8 +142,8 @@ Output a single line with the uppercase letter “Y” if the appropriate LEDs c
 
 ## Example
 
-Sample input 1
-
+Sample input 1:
+```
 6 6 6
 
 ****** --*---
@@ -153,71 +157,72 @@ Sample input 1
 ****** -**---
 
 *****- --*---
-
-Sample output 1
-
+```
+Sample output 1:
+```
 N
-
-Sample input 2
-
+```
+Sample input 2:
+```
 2 4 6
 
 **** ------
 
 ***- *-----
-
-Sample output 2
-
+```
+Sample output 2:
+```
 N
-
-Sample input 3
-
+```
+Sample input 3:
+```
 2 6 4
 
 ****** ****
 
 *-**-* ----
-
-Sample output 3
-
+```
+Sample output 3:
+```
 Y
-
-Sample input 4
-
+```
+Sample input 4:
+```
 1 1 1
 
 * *
-
-Sample output 4
-
+```
+Sample output 4:
+```
 Y
-
-Sample input 5
-
+```
+Sample input 5:
+```
 1 1 1
 
 * -
-
-Sample output 5
-
+```
+Sample output 5:
+```
 Y
-
-Sample input 6
-
+```
+Sample input 6:
+```
 1 1 1
 
 - *
-
-Sample output 6
-
+```
+Sample output 6:
+```
 N
-
-Sample input 7
-
+```
+Sample input 7:
+```
 1 1 1
 
-- -
-
-Sample output 7
-
+"- -"
+```
+Sample output 7:
+```
 Y
+```
