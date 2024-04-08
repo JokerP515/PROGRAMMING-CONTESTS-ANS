@@ -98,7 +98,6 @@ aaple
 Input 1:
 ```
 3 4
-
 icpc
 back
 laps
@@ -134,7 +133,7 @@ Input
 
 The first line contains three integers R, C and K (1 ≤ R, C, K ≤ 1000), indicating respectively the number of rows of both the LED matrix and the pattern, the number of columns of the matrix, and the number of columns of the pattern.
 
-The next R lines describe the matrix and the pattern from top to bottom. Each of these lines contains a string M of length C and a string P of length K, describing respectively a row of the matrix and a row of the pattern. Each character of both M and P is either “*” (asterisk) or “-” (hyphen). For M, the character “*” indicates a good LED while the character “-” represents a broken LED. For P, the character “*” indicates a LED the must be turned on while the character “-” represents a LED that must be turned off.
+The next R lines describe the matrix and the pattern from top to bottom. Each of these lines contains a string M of length C and a string P of length K, describing respectively a row of the matrix and a row of the pattern. Each character of both M and P is either “*” (asterisk) or “-” (hyphen). For M, the character “*” (asterisk) indicates a good LED while the character “-” represents a broken LED. For P, the character “*” (asterisk) indicates a LED the must be turned on while the character “-” represents a LED that must be turned off.
 
 Output
 
