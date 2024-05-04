@@ -218,3 +218,237 @@ Sample output 7:
 ```
 Y
 ```
+
+
+# Problem A. An Easy-Peasy Problem
+
+Source: Red de Programación Competitiva
+
+Source file name: [Peasy.cpp](/Peasy.cpp)
+
+Input: Standard
+
+Output: Standard
+
+Travis was recently saddled with writing the easy problem for a competitive programming contest aimed at high school students. Writing an easy problem is a bit of a challenge for Travis; a problem labeled as “Medium Difficulty Level” by Travis typically ends up being the hardest problem of the set! 
+
+But this time things were different. When the contest was over, Travis was happy that everyone solved his problem. However, some of the other judges informed Travis a problem is easy only if at least half of the contestants solve the problem in the first half of the contest.
+
+Travis has some data on his problem, and now he wants to determine: was his problem truly easy?
+
+In programming competitions, the term “solves” is used to refer to the number of correct submissions for a problem, i.e., that many contestants solved the problem.
+
+Given the number of solves for Travis’s problem at the end of the first half and at the end of the contest, determine whether at least half the people solved the problem in the first half. Note that solves at the end of the contest includes solves of the first half as well.
+
+## Input
+
+There is only one input line; it contains two integers, s1 and s2 (0 ≤ s1 ≤ s2; 1 ≤ s2 ≤ 100), representing solves of Travis’s problem at the end of the first half and at the end of the contest, respectively.
+
+## Output
+
+Print “E” (quotes for clarity) if the problem is considered easy by the other judges’ standards. Print “H” (quotes for clarity) if the problem is not considered easy by the other judges’ standards. Everyone knows that if Travis is not writing an easy problem, the problem is probably hard!
+
+## Example
+
+Input 0:
+```
+10 20
+```
+Output 0:
+```
+E
+```
+Input 1:
+```
+6 13
+```
+Output 1:
+```
+H
+```
+Input 2:
+```
+15 22
+```
+Output 2:
+```
+E
+```
+
+# Problem B. Age Expression
+
+Source: Red de Programación Competitiva
+
+Source file name: [Age.cpp](/Age.cpp)
+
+Input: Standard
+
+Output: Standard
+
+Dr. O has two granddaughters (named Alyssa and Konari) and they keep Dr. O young!
+
+When people ask Dr. O how old he is, rather than giving one positive integer (his age), Dr. O provides two positive integers a and k; Dr. O’s age can then be computed using the expression (a × Alyssa’s age) + (k × Konari’s age).
+
+Given three positive integers (Dr. O’s age, Alyssa’s age, and Konari’s age), determine if the positive integers a and k exist.
+
+## Input
+
+There is only one input line; it provides (respectively) Dr. O’s age, Alyssa’s age, and Konari’s age. Assume that 1 ≤ Konari’s age < Alyssa’s age < Dr. O’s age ≤ 150.
+
+## Output
+
+Print 1 (one) if a and k exist, 0 (zero) otherwise. Note that a and k must both be greater than zero.
+
+## Example
+
+Input 0:
+```
+69 9 1
+```
+Output 0:
+```
+1
+```
+Input 1:
+```
+76 11 7
+```
+Output 1:
+```
+1
+```
+Input 2:
+```
+50 9 3
+```
+Output 2:
+```
+0
+```
+Input 3:
+```
+70 10 5
+```
+Output 3:
+```
+1
+```
+Input 4:
+```
+10 7 2
+```
+Output 4:
+```
+0
+```
+
+# Problem C. Increasing Sublist
+
+Source: Red de Programación Competitiva
+
+Source file name: [Increasing.cpp](/Increasing.cpp)
+
+Input: Standard
+
+Output: Standard
+
+Given a list of numbers, we define a sublist as one or more consecutive elements in the list. An increasing sublist is when the consecutive elements are in strictly increasing order, i.e., each element is greater than the element to its left in the sublist (except the first element in the sublist which does not have an element
+to its left).
+
+Given a list, find the length (number of elements) of the longest increasing sublist, i.e., the length of the sublist with the most number of elements.
+
+## Input
+
+The first input line contains an integer, n (1 ≤ n ≤ 30), indicating the number of elements in the list. The next input line provides the n elements in the list. Assume each element is between 1 and 100, inclusive.
+
+## Output
+
+Print the length (number of elements) of the longest increasing sublist.
+
+## Example
+
+Input 0:
+```
+6
+5 7 2 4 6 3
+```
+Output 0:
+```
+3
+```
+Input 1:
+```
+15
+10 70 80 5 5 5 15 20 30 40 60 9 8 70 80
+```
+Output 1:
+```
+6
+```
+
+# Problem D. Let’s Portmanteau
+
+Source: Red de Programación Competitiva
+
+Source file name: [Portmanteau.cpp](/Portmanteau.cpp)
+
+Input: Standard
+
+Output: Standard
+
+From “yourdictionary.com”: Portmanteau, pronounced “port-man-tow,” refers to a new word made from two words and their meanings. For example, the portmanteau brunch refers to a combined meal of breakfast and lunch, and spork is a mix between a spoon and a fork. 
+
+You are to combine two words using a simplified approach.
+
+Rules for combining:
+
+1. Get the first letter of the first word regardless of what (vowel or consonant) it is. Then, starting from the second letter of the first word, get letters moving right until you reach a vowel. If no vowels while moving right, all letters will be taken. If there is a vowel moving right, let’s call it v1.
+
+2. Get the last letter of the second word regardless of what (vowel or consonant) it is. Then, starting from the letter next to the last letter of the second word, get letters moving left until you reach a vowel. If no vowels while moving left, all letters will be taken. If there is a vowel moving left, let’s call it v2.
+
+3. Combine the two words by listing the letters taken from the first word (Step 1), followed by a vowel (let’s call it the merging vowel), followed by the letters taken from the second word (Step 2). The merging vowel is as follows:
+
+* If the second word has a vowel while moving left (i.e., v2 exists), v2 is the merging vowel.
+
+* If the second word does not have a vowel while moving left (i.e., v2 does not exist) but the first word has a vowel while moving right (i.e., v1 exists), v1 is the merging vowel. 
+
+* If v1 and v2 don’t exist (i.e., neither word has a vowel while moving right/left), use the letter “o” as the merging vowel.
+
+Assume the vowels are “aeiou”.
+
+## Input
+
+There are two input lines: the first line provides the first word and the second line provides the second word. Assume that each word starts in column 1, is at least 4 letters and at most 20 letters, and contains only lowercase letters.
+
+## Output
+
+Print the combined word on one output line.
+
+## Example
+Input 0:
+```
+abcdefun
+ghijku
+```
+Output 0:
+```
+abcdijku
+```
+Input 1:
+```
+abcdefun
+ghmn
+```
+Output 1:
+```
+abcdeghmn
+```
+Input 2:
+```
+abycd
+fgyhu
+```
+Output 2:
+```
+abycdofgyhu
+```
