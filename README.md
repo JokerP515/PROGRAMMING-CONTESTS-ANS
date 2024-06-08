@@ -425,6 +425,7 @@ There are two input lines: the first line provides the first word and the second
 Print the combined word on one output line.
 
 ## Example
+
 Input 0:
 ```
 abcdefun
@@ -451,4 +452,183 @@ fgyhu
 Output 2:
 ```
 abycdofgyhu
+```
+
+# Problem C - Cuckoo Synchronization
+
+Source: Red de Programación Competitiva
+
+Source file name: [C_(202406).cpp](/C_(202406).cpp)
+
+Input: Standard
+
+Output: Standard
+
+Artem is excited to be visiting his grandma for the weekend since he is able to play around with her vast collection of N cuckoo clocks. Artem has put a lot of effort on synchronizing the clocks so that all of them emit their first cuckoo at minute 1. But having such a variety of clocks comes with a problem: each clock will repeat their sounds at different intervals.
+
+To be more specific, the i−th (1 ≤ i ≤ N) cuckoo clock will make a sound every i minutes after their synchronized sound. For example, for N ≥ 3 the i = 3 clock will keep emitting sounds every 3 minutes after it’s first cuckoo at time 1. So Artem will be able to listen to it’s beautiful sound on the 1, 4, 7, 10, . . . minutes.
+
+Excited for all of his hard work, Artem wants to show the experiment to his grandma.
+
+Currently it’s time 0 and he knows that his grandma will be back from the store in T minutes.
+
+Artem wants you to help him figure out how many clocks will make their cuckoo sound exactly when his grandma arrives!
+
+## Input
+
+The first line contains an integer Q(1 ≤ Q ≤ 100) - the number of test cases.
+
+For each test case, the only line contains two integers - N(1 ≤ N ≤ 10^9) and T(1 ≤ T ≤ 10^9), for the number of cuckoo clocks and the time in minutes when Artem’s grandma is back, respectively.
+
+## Output
+
+For each test case, output the number of clocks that make the cuckoo sound at exactly T minutes.
+
+## Example
+
+Sample input 1:
+```
+5
+5 1
+10 5
+10 6
+5 3
+6 11
+```
+Sample output 1:
+```
+5
+3
+2
+2
+3
+```
+Sample input 2:
+```
+3
+1000 647
+1000000 123456
+1000000000 1000000000
+```
+Sample output 2:
+
+```
+8
+4
+20
+```
+
+# Problem F – Fair Prize
+
+Source: Red de Programación Competitiva
+
+Source file name: [L_(202406).cpp](/L_(202406).cpp)
+
+Input: Standard
+
+Output: Standard
+
+John is at the fair and has finally won a prize in the marble game. In the prize selection, there are n different prizes arranged in a row, each of the n prizes has a label vi (1 ≤ i ≤ N) that represents the value of the prize. John has scored p points in the marble game, and, according to the marble game rules, he can select a prize that has a value less than or equal to p.
+
+Given the values of the n prizes, can you help John select the prize with the highest value that he can choose?
+
+## Input
+
+The first line of input contains two integer numbers separated by a space, n (1 ≤ n ≤ 1000) and p (1 ≤ p ≤ 1000), representing the number of prizes in the marble game and the amount of points John scored in the game, respectively.
+
+The second and last line of input contains n integer numbers separated by a space, where the i-th number represents the value vi (1 ≤ vi ≤ 1000) of the i-th prize.
+
+## Output
+
+Output a line with a single integer number, the value of the prize with the highest value that John can choose.
+
+## Example
+
+Sample input 1:
+```
+5 10
+4 2 4 3 9
+```
+Sample output 1:
+```
+9
+```
+Sample input 2:
+```
+1 10
+10
+```
+Sample output 2:
+```
+10
+```
+Sample input 3:
+```
+3 6
+6 2 4
+```
+Sample output 3:
+```
+6
+```
+
+# Problem L – Lost Shoes
+
+Source: Red de Programación Competitiva
+
+Source file name: [L_(202406).cpp](/L_(202406).cpp)
+
+Input: Standard
+
+Output: Standard
+
+Summer is coming! And for Miguel’s family, it means a celebration is coming, but they are a pretty weird family. Not only do they hate music and celebrate summer, but they are also shoemakers, so his mother Coco gifts the whole family with a pair of shoes every year.
+
+However, this year Miguel’s dog has made a mess and the shoes got all mixed up. Everyone got a left shoe and a right shoe, but not necessarily the shoes they were supposed to get. So now they have asked for your help to get everyone their shoes.
+
+To do this, two people can swap a shoe between them, but only if they are of the same side (they can only swap a left shoe with a left shoe and a right shoe with a right shoe). They want to know what is the minimum number of swaps they need to do so everyone ends with their shoe.
+
+## Input
+
+The first line contains a number N (1 ≤ N ≤ 10^6) indicating the number of people in the family.
+
+The second line contains N numbers a1, ..., aN (1 ≤ ai ≤ N). The i-th number indicates who is the owner of the right shoe the i-th person has. 
+
+The third line contains N numbers b1, ..., bN (1 ≤ bi ≤ N). The i-th number indicates who is the owner of the left shoe the i-th person has.
+
+## Output
+
+Print a line with a number k, the minimum number of swaps they need to do so everyone has their shoes.
+
+## Example
+
+Sample input 1:
+```
+2
+1 2
+2 1
+```
+Sample output 1:
+```
+1
+```
+Sample input 2:
+```
+3
+1 3 2
+2 1 3
+```
+Sample output 2:
+```
+2
+```
+Sample input 3:
+```
+5
+4 5 1 2 3
+3 1 4 5 2
+```
+Sample output 3:
+```
+8
 ```
