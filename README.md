@@ -458,7 +458,7 @@ abycdofgyhu
 
 Source: Red de Programación Competitiva
 
-Source file name: [C_(202406).cpp](/C_(202406).cpp)
+Source file name: [C_(202406).py](/C_(202406).py)
 
 Input: Standard
 
@@ -522,7 +522,7 @@ Sample output 2:
 
 Source: Red de Programación Competitiva
 
-Source file name: [L_(202406).cpp](/L_(202406).cpp)
+Source file name: [F_(202406).cpp](/F_(202406).cpp)
 
 Input: Standard
 
