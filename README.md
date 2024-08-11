@@ -703,3 +703,51 @@ You chickened out.
 Round 3
 You lose.
 ```
+
+
+# Problem C - Caesar Word Salad
+
+Source: Colombian Collegiate Programming League - CCPL
+
+Source file name: [caesar.cpp](/caesar.cpp)
+
+Input: Standard
+
+Output: Standard
+
+The year is 46, B.C. Gaius Julius Caesar is the most powerful ruler in the world.
+
+The newly named “imperator”, busy consolidating his power in Rome and waging wars abroad, needs a secure way to send messages to his representatives around the Roman world.
+
+The now world-famous solution to this problem is the eponymous Caesar cipher, an encoding in which every letter from the plaintext is rotated through the alphabet by a fixed shift distance. For example, when encoded using a shift distance of 3, alexandra becomes dohadqgud.
+
+Caesar is a master of strategy—he knows the value of an effective double-bluff and will not hesitate to use one. In fact, when possible, he will even send some messages with a shift distance of 0 to really confuse his enemies.
+
+However, after a run in with the soothsayer Spurina, Caesar has become a worried man. He will hear no talk of any “i”s of March and so, wants to send only messages where the ciphertext contains no “i”s!
+
+Given the plaintext of a message, how many distinct “i-free” shifts could be used for the encoding?
+
+## Input
+
+The input consists of several test cases. Each test case consists of a line containing the plaintext w. w will be at least one character long and no more than 100 characters in length. It will contain only lower-case letters.
+
+## Output
+
+For each test case output a single line. If at least one “i-free” shift of w can be found, output the number of distinct shift distances that could be used. Otherwise, output impossible.
+
+You may consider 0 as a valid shift distance provided it does not lead to any “i”s.
+
+The output must be written to standard output.
+
+## Sample Input
+```
+erratum
+agricola
+thequickbrownfoxjumpsoverthelazydog
+```
+## Sample Output
+```
+20
+19
+impossible
+```
