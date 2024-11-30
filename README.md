@@ -751,3 +751,273 @@ thequickbrownfoxjumpsoverthelazydog
 19
 impossible
 ```
+
+# Problem A - Alien Attack
+
+Source: Red de Programación Competitiva - RPC
+
+Source file name: [Alien.cpp](/Alien.cpp)
+
+Input: Standard
+
+Output: Standard
+
+Aliens are visiting Earth and, as usual, they plan to abduct humans for their experiments. In the past, alien abductions have caused a lot of press coverage and wild speculation on Earth. Luckily for them, most people do not believe these stories and think that aliens are not real.
+
+In order to keep a low profile in the future, the Galactic Committee for Person Captures (GCPC) has established rules for abductions. Besides a lot of boring paperwork, the aliens have to prepare the abduction carefully. While they can make multiple trips (in fact, alien travel is so fast in practice that this is not a limitation at all), they must be smart about it so that their secret is not revealed to humans. If aliens want to abduct a person, they are required to abduct all of their friends at the same time, so that no one notices that their friend is missing when they want to hang out. Of course, friendships on planet Earth are bidirectional, that is if Alice is a friend of Bob, then Bob is also a friend of Alice.
+
+In preparation for the trip, the aliens have observed their targets and started taking note of all their friendships. In total, they must abduct n people, including their friends. Now, they want to book a starship at their local dealership and wonder how much space they need to abduct all n people. A starship’s storage space is measured in terms of the number of people that can be transported simultaneously. What is the minimum storage space required to abduct all n people?
+
+## Input
+The input consists of:
+- One line with two integers n and m (1 ≤ n ≤ 2·10^5, 0 ≤ m ≤ 2·10^5), the number of people and the total number of friendships between them.
+- m lines, each with two integers i and j (1 ≤ i < j ≤ n), denoting a friendship between persons i and j.
+
+The people are numbered from 1 to n. It is guaranteed that no friendship is listed multiple times.
+
+## Output
+
+Output the minimum storage space needed to abduct all people.
+
+## Input 0
+```
+5 3
+1 2
+2 3
+4 5
+```
+## Output 0
+```
+3
+```
+## Input 1
+```
+3 0
+```
+## Output 1
+```
+1
+```
+## Input 2
+```
+8 8
+1 2
+2 3
+3 4
+1 4
+1 5
+2 6
+3 7
+4 8
+```
+## Output 2
+```
+8
+```
+
+# Problem B - Bookshelf Bottleneck
+
+Source: Red de Programación Competitiva - RPC
+
+Source file name: [Bookshelf.cpp](/Bookshelf.cpp)
+
+Input: Standard
+
+Output: Standard
+
+Brianna is a bookworm. At home, she has a big bookshelf with all her favorite books. She has a large collection ranging from detective novels and science-fiction novels to biographies. 
+
+Recently, Brianna has expanded her collection with n graphic novels. However, the new books currently lie around everywhere and form huge stacks on the floor. In the meantime, one of the shelf boards has collected dust and random household utensils that do not belong there. The new books just lying around have become too much to bear, and Brianna finally decided to put them on this shelf board. To do so, she first has to make room on it.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/eabd5798-5882-43b6-98f7-2573d24fab54" alt="Arrow pattern"/>
+</p>
+
+Brianna wants to arrange the books in a single horizontal line without stacking multiple books on top of each other. While the shelf is wide enough to hold all books without problems, it takes time to make room on the shelf. Therefore, Brianna wants to minimize the width of the part of the shelf that she needs to clear.
+
+Each book can be described as a cuboid with three side lengths l, w, and h. Since the room above the shelf board is limited by the next shelf board above it, she can only fit a book vertically if its vertical side length is at most the distance H between the two shelf boards. Brianna may rotate each book in three-dimensional space as she wants. It is guaranteed that the shelf is deep enough so that the books will not fall off, no matter the orientation. However, all books must stand properly on the shelf board, meaning that every book touches the shelf board along an entire face and not just by an edge. 
+What is the minimum width of shelf Brianna’s books need?
+
+## Input
+The input consists of:
+- One line with two integers n and H (1 ≤ n ≤ 10^5, 1 ≤ H ≤ 10^9), the number of books and the height of the shelf, respectively.
+- n lines, each containing three integers l, w, h (1 ≤ l, w, h ≤ 10^9), the dimensions of the books.
+
+## Output
+Output the minimum width of shelf Brianna’s books need, or “impossible” if it is impossible to place the books on the shelf.
+
+## Input 1
+```
+1 3
+10 2 5
+```
+## Output 1
+```
+5
+```
+## Input 2
+```
+1 3
+10 4 5
+```
+## Output 2
+```
+impossible
+```
+## Input 3
+```
+2 10
+10 2 10
+2 3 4
+```
+## Output 3
+```
+4
+```
+## Input 4
+```
+3 1000000000
+1000000000 1000000000 1000000000
+1000000000 1000000000 1000000000
+1000000000 1000000000 1000000000
+```
+## Output 4
+```
+3000000000
+```
+
+# Problem F - Figure Skating
+
+Source: Red de Programación Competitiva - RPC
+
+Source file name: [Figure.cpp](/Figure.cpp)
+
+Input: Standard
+
+Output: Standard
+
+Figure skating is a very popular sport at the Winter Olympics. It has been on the programme the longest of all winter sports, having even been included in the Summer Olympics before the split in 1924. Just like in gymnastics, each contestant executes a routine consisting of elements, which are individually scored by a jury. This subjective aspect to judging skill always leaves room for heated discussion, but a huge scandal in the 2002 Winter Olympics, with allegations that the game had been fixed, caused a transition to the new scoring system IJS. Points awarded to each element of the routine are known beforehand: A Lutz scores 0.60 points (but 2.10 for a double and 5.90 for a triple), a Salchow scores 0.40 (1.30 for double, 4.30 for triple), an Euler scores 0.50, et cetera. Then, points are added or subtracted by the jury based on execution. Consequently, a figure skater is able to estimate his or her score assuming average performance.
+
+Olympics observers from the Bookmakers’ Association for the Prevention of Cheating are tasked with assessing the objectivity of the jury. They will compare the predicted ranking of the contestants with the final outcome to determine who is the jury’s favourite. The favourite is the contestant who rose the most places between the predicted and final scoreboard. Ties are broken by whoever ends up higher on the final scoreboard. However, if no one did better than predicted, this raises some red flags with the observers, which is declared “suspicious”.
+
+## Input 
+The input consists of:
+- A line containing a single integer n (1 ≤ n ≤ 1000), the number of contestants.
+- n lines, the ith of which contains the name of the contestant who places ith on the predicted scoreboard.
+- n lines, the ith of which contains the name of the contestant who places ith on the final scoreboard.
+
+Each name consists of at most 100 lower-case and upper-case alphabetical characters. All names are unique, and occur on both scoreboards exactly once.
+
+## Output
+
+If the scoreboards are suspicious, output “suspicious”. Otherwise, output the name of the jury’s favorite.
+
+## Input 0
+```
+3
+Plisetsky
+Katsuki
+Leroy
+Leroy
+Plisetsky
+Katsuki
+```
+## Output 0
+```
+Leroy
+```
+## Input 1
+```
+2
+Allison
+Bobson
+Allison
+Bobson
+```
+## Output 1
+```
+suspicious
+```
+## Input 2
+```
+3
+daSilva
+Aziz
+Peters
+Aziz
+Peters
+daSilva
+```
+## Output 2
+```
+Aziz
+```
+
+# Problem K - Kitten of Chaos
+
+Source: Red de Programación Competitiva - RPC
+
+Source file name: [Kitten.cpp](/Kitten.cpp)
+
+Input: Standard
+
+Output: Standard
+
+Karen has a beautiful precious glass object on the shelf in her living room. Unfortunately, her cat Klaus does not like it when there is stuff on his favourite shelf. Everything that is not bolted or glued in place, he will gradually push over the edge while looking Karen straight in the eyes.
+
+Now, Klaus’ paw slowly executes his diabolical deed. His cute fluffy face radiates inadvertent innocence. Knowing that any intervention would only delay the inevitable, Karen wonders what will happen to the string her sister Kim wrote on the precious glass object. After all, it took Kim a whole week to gather all the bdpq letters that make up the string.
+
+Can you describe to Karen what the string will look like from her point of view while it tumbles towards destruction?
+
+While falling off the shelf, Karen’s precious glass object is subject to the following transformations, described as seen when looking at the object from the front.
+
+- h: horizontal flip, e.g. bbq becomes pdd
+- v: vertical flip, e.g. bbq becomes ppd
+- r: 180-degree rotation, e.g. bbq becomes bqq
+
+No flips along or rotations about any other axes are possible.
+
+## Input
+The input consists of:
+- One line with a string s consisting of the letters bdpq (1 ≤ |s| ≤ 5·10^5), the string printed on the glass object as seen at the start of the fall.
+- One line with a string t consisting of the letters hvr (1 ≤ |t| ≤ 5·10^5) giving the sequence of transformations in the order that they occur during the fall.
+
+## Output
+Output the string that can be seen at the moment the glass object touches the ground and just before it shatters into pieces.
+
+## Input 0
+```
+bbq
+h
+```
+## Output 0
+```
+pdd
+```
+## Input 1
+```
+bbq
+v
+```
+## Output 1
+```
+ppd
+```
+## Input 2
+```
+bbq
+r
+```
+## Output 2
+```
+bqq
+```
+## Input 3
+```
+ppbddbq
+hvrhv
+```
+## Output 3
+```
+bqppqdd
+```
