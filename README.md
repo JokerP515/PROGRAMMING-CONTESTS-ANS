@@ -1021,3 +1021,194 @@ hvrhv
 ```
 bqppqdd
 ```
+
+# Problem D. Dialling Digits
+
+Source: Red de Programación Competitiva - RPC (2nd Activity 2025)
+
+Source file name: [Dialling.cpp](/Dialling.cpp)
+
+Input: Standard
+
+Output: Standard
+
+Disaster struck at the Billboards And Phone-numbers Company! Due to a bug in their database system, they lost the corresponding mnemonic phrases for each of the registered phone numbers. These mnemonic phrases are typically used on billboards, to make a phone number for an advertisement easier to remember by people who read them. To dial the phone number from a mnemonic phrase, you simply have to press the number keys corresponding to each letter, as shown in Figure 2. For example, the phone number “1-800-BAPC” would be dialled as “1-800-2272”.
+
+Using this information and a given list of valid words, reconstruct the possible mnemonic phrases for each registered phone number. Each mnemonic phrase consists of exactly one word from the word list. In the input, you will only receive the part of the phone number that should be exactly linked to possible mnemonic phrases, so it does not include the “1-800-” prefix (or any other prefix).
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0b5c051c-0996-48f5-8435-ef6ada3aba9f" alt="Keypad of a telephone"/>
+</p>
+
+## Input
+The input consists of:
+- One line with two integers n and m (1 ≤ n, m ≤ 10^5, n·m ≤ 10^5), the number of words and the number of phone numbers.
+- n lines, each with a word w (1 ≤ |w| ≤ 10), consisting only of English lowercase letters (a-z). The words are unique and given in alphabetical order.
+- m lines, each with a phone number p (1 ≤ |p| ≤ 10), consisting only of digits that correspond to letters in a mnemonic phrase (2-9).
+
+##Output
+For each phone number, output the number of words that are a valid mnemonic phrase for this phone number, followed by these words in alphabetical order.
+
+## Input 0
+```
+5 3
+algorithm
+bapc
+benelux
+contest
+progaming
+2272
+424242
+2363589
+```
+## Output 0
+```
+1 bapc
+0
+1 benelux
+```
+## Input 1
+```
+3 1
+peer
+reds
+refs
+7337
+```
+## Output 1
+```
+3 peer reds refs
+```
+## Input 2
+```
+7 3
+black
+judge
+my
+of
+quartz
+sphinx
+vow
+25225
+782789
+774466
+```
+## Output 2
+```
+1 black
+1 quartz
+0
+```
+## Input 3
+```
+5 1
+and
+bland
+e
+land
+of
+63
+```
+## Output 3
+```
+1 of
+```
+
+# Problem H. Human Pyramid
+
+Source: Red de Programación Competitiva - RPC (2nd Activity 2025)
+
+Source file name: [Human.cpp](/Human.cpp)
+
+Input: Standard
+
+Output: Standard
+
+As chairman of the Building A Pyramid Committee, you are specialized in breaking one specific world record: building the highest human pyramid. Unfortunately, you only know a limited number of people who are willing to be in the pyramid. After all, building human pyramids does not make much money, so most people are volunteers.
+
+A full human pyramid of height h consists of h layers of people. As seen from below, it has h people on the first layer, h−1 on the second, h − 2 on the third, and so forth until eventually the final layer has just a single person. To determine whether you can break the world record, you need to know how high a pyramid you can build. Given how many people are available, how tall is the highest possible human pyramid that these people can make?
+
+## Input
+The input consists of:
+- One line with an integer n (1 ≤ n ≤ 10^12), the number of people available to build the pyramid.
+
+## Output
+Output the height of the highest possible pyramid you can build with n people.
+
+## Input 0:
+```
+3
+```
+## Output 0:
+```
+2
+```
+## Input 1:
+```
+12
+```
+## Output 1:
+```
+4
+```
+
+# Problem J. Jumbled Scoreboards
+
+Source: Red de Programación Competitiva - RPC (2nd Activity 2025)
+
+Source file name: [Jumbled.cpp](/Jumbled.cpp)
+
+Input: Standard
+
+Output: Standard
+
+You were so hyped to attend the final game of the Ball And Paddle Competition, where the two best teams in the world compete to paddle as many balls into the opponent’s goal as possible. But alas, you fell ill, and cannot join your friends. Luckily, your friends took lots of pictures during the match, and after the match concluded, they sent you all the pictures that they have. Because the messaging app uploads and downloads the pictures in parallel, you are wondering whether you received them in chronological order. It looks like the scoreboards in each picture are unique, and knowing that the score of a team can only increase over time, you should be able to figure this out. Feeling too sick to check the order of the pictures manually, you decide to write a program that checks temporal consistency based on the scoreboards that are in the picture.
+
+Given a list of intermediate scores from the match, determine whether the scores are in chronological order
+
+## Input
+The input consists of:
+- One line with an integer n (1 ≤ n ≤ 100), the number of pictures you received.
+- n lines, each with two integers a and b (0 ≤ a, b ≤ 100), the scores of the two teams in one of the pictures.
+Every pair of scores (a, b) in the input is unique.
+
+The order of the scores in the input is the order in which you received the pictures.
+## Output
+Output “yes” if the scores are in chronological order, or “no” if they are not
+
+## Input 0
+```
+4
+1 0
+2 0
+4 0
+4 1
+```
+## Output 0
+```
+yes
+```
+## Input 1
+```
+3
+0 0
+1 0
+0 2
+```
+## Output 1
+```
+no
+```
+## Input 2
+```
+5
+1 2
+0 0
+4 3
+2 3
+5 5
+```
+## Output 2
+```
+no
+```
